@@ -13,7 +13,7 @@ void my_connect_callback(struct mosquitto *mosq, void *userdata, int result)
 {
     if (!result)
     {
-            mosquitto_subscribe(mosq, NULL, "$SYS/#",2); //test non sys
+            mosquitto_subscribe(mosq, NULL, "test",2);
     }else
     {
         fprintf(stderr, "Connection failed.\n");
